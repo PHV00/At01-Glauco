@@ -8,7 +8,7 @@
 - **Entrega:** Microsoft Teams  
 - **Revisão em sala e entrega:** 30/mar  
 - **Período de execução:** Durante os feriados (16/fev e 09/mar) e semanas seguintes  
-- **Equipes:** Obrigatoriamente as mesmas equipes do PAC  
+- **Equipes:** Amanda Korczagin, Flavia Antonieli de Souza, Marina Rosa Oliveira e Pedro Henrique Vitoreti 
 
 ---
 
@@ -44,18 +44,6 @@ Realizar o primeiro contato estruturado com **IA como ferramenta de desenvolvime
 Revisar os conceitos por meio de **problemas clássicos de entrevistas técnicas**.
 
 A atividade será desenvolvida durante os feriados e revisada em sala no dia **30/mar**, com apresentação por equipe.
-
----
-
-# 🗓️ Cronograma
-
-| Data  | Conteúdo |
-|--------|----------|
-| **16/fev** | Estruturas de Dados I: Arrays e Listas Encadeadas |
-| **09/mar** | Estruturas de Dados I: Pilhas |
-| **30/mar** | Revisão em sala: Estruturas de Dados I e II + entrega da atividade da Aula 0 |
-
----
 
 # 🧠 Parte 1 — Escolha da IA
 
