@@ -8,9 +8,9 @@ ChatGPT (Open AI)
 
 ## Forma de acesso
 A ferramenta foi acessada via interface web, utilizando a conta pessoal de cada um dos integrantes do grupo. 
-- chat.openai.com
+- https://chatgpt.com/pt-BR/
 
-## Justificatica de escolha da ferrameta
+## Justificativa de escolha da ferrameta
 - Facilidade na geração e eplicação de código
 - Excelente suporte para a linguagem **python**
 - Capacidade para explicar conceitos de Estrutura de dados
@@ -25,7 +25,7 @@ A linguagem escolhida pela equipe foi **python**, pois a ferramenta apresenta co
 - Geração de rascunhos iniciais das soluções 
 - Explicar a lógica dos algorítmos 
 - Revisar o código desenvolvido pela equipe
-- Sugerir otimizações
+- Sugerir otimizações/refatorações
 
 
 
