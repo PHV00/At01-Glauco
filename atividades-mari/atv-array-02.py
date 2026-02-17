@@ -1,4 +1,11 @@
 """
+-------------------------------------------------------------------------------------------------------------------------------------
+Disciplina: Algoritmos Avançados   
+Curso: Engenharia de Software  
+Aluno(a): Marina Rosa Oliveira
+Professor: Glauco Scheffel
+-------------------------------------------------------------------------------------------------------------------------------------
+
 -> Problema: Majority Element
 
 -> Complexidade:
