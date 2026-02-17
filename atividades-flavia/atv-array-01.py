@@ -1,9 +1,16 @@
 """
--> Problema: Increasing Array (CSES)
+-------------------------------------------------------------------------------------------------------------------------------------
+Disciplina: Algoritmos Avançados   
+Curso: Engenharia de Software  
+Aluno(a): Flavia Antonieli de Souza 
+Professor: Glauco Scheffel
+-------------------------------------------------------------------------------------------------------------------------------------
+
+Problema: Increasing Array (CSES)
 
 -> Complexidade:
-Tempo: O(n)
-Memória: O(1)
+Tempo: 1.00 s
+Memória: 512 MB
 
 -> Estrutura principal utilizada: Array - Nível fácil
 
@@ -122,9 +129,9 @@ def solve_v2():
         print("Erro: n deve ser um número inteiro.")
         return
 
-    # ------------------------------
-    # Validação: n igual a 0
-    # ------------------------------
+# ------------------------------
+# Validação: n igual a 0
+# ------------------------------
     if n == 0:
         print("\nCaso especial identificado: n = 0")
         print("Número mínimo de incrementos: 0")
@@ -141,18 +148,18 @@ def solve_v2():
             print("Erro: todos os valores devem ser inteiros.")
             return
 
-    # ------------------------------
-    # Validação: quantidade incorreta
-    # ------------------------------
+# ------------------------------
+# Validação: quantidade incorreta
+# ------------------------------
     if len(arr) != n:
         print("\nErro: a quantidade de números digitados não corresponde ao valor de n.")
         print(f"n informado: {n}")
         print(f"Quantidade digitada: {len(arr)}")
         return
 
-    # ------------------------------
-    # Algoritmo principal
-    # ------------------------------
+# ------------------------------
+# Algoritmo principal
+# ------------------------------
     moves = 0
     previous = arr[0]
 
