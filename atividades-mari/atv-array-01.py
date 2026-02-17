@@ -56,6 +56,26 @@ Essa abordagem evita conversões e utiliza apenas operações sobre o próprio a
 Neste exercício, a IA foi utilizada para refatorar o código e explicar sua refatoração linha a linha, de forma a facilitar a compreensão da nova lógica. Além disso,
 foi utilizada para melhorar a clareza da documentação.
 
+-> Prompt
+"dado o código
+
+numStr = ""
+
+    for n in numArr:
+        numStr += str(n)
+
+    num = int(numStr)
+
+    num = num + 1
+
+    return num
+
+e as instruções abaixo 
+
+Given a non-negative number represented as an array of digits. The task is to add 1 to the number (increment the number represented by the digits by 1). The digits are stored such that the most significant digit is the first element of the array.
+
+refatore o código e explique linha a linha"
+
 Fonte: https://www.geeksforgeeks.org/dsa/adding-one-to-number-represented-as-array-of-digits/
 """
 

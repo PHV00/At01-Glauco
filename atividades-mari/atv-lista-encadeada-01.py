@@ -35,6 +35,13 @@ Quando o que avança de dois em dois chegar ao final da lista, o que avança de 
 Neste exercício, a IA foi utilizada para criar o rascunho do código e explicá-lo linha a linha, facilitando meu entendimento do problema. Depois, refatorei o código de forma a
 deixá-lo mais organizado dado o contexto da atividade. Além disso, ela também foi utilizada para criar novos casos de teste além daqueles que constam no site.
 
+-> Prompt
+"dado o seguinte problema, resolva em python e me explique o passo a passo
+
+Given the head of singly linked list, find middle node of the linked list.
+
+If the number of nodes is odd, return the middle node.
+If the number of nodes is even, there are two middle nodes, so return the second middle node."
 
 Fonte: https://www.geeksforgeeks.org/dsa/write-a-c-function-to-print-the-middle-of-the-linked-list/
 """

@@ -51,11 +51,25 @@ Array: [2, 13]
 Neste exercício, a IA foi utilizada para refatorar o código e explicar sua refatoração linha a linha, de forma a facilitar a compreensão da nova lógica e
 tornar o código mais eficiente utilizando python puro, sem bibliotecas externas.
 
+-> Prompt
+
+"dado o código abaixo, refatore e explique linha a linha com comentários
+
+from collections import Counter
+def solucao_v1(arr):
+    metade = len(arr) // 2   # metade inteira
+    contagem = Counter(arr)
+
+    for numero, frequencia in contagem.items():
+        if frequencia > metade:
+            return numero
+
+    return -1   # se não existir valor majoritário"
+
 Fonte: https://www.geeksforgeeks.org/dsa/majority-element/
 """
 # V1 - Feito por mim
 from collections import Counter
-
 def solucao_v1(arr):
     metade = len(arr) // 2   # metade inteira
     contagem = Counter(arr)
