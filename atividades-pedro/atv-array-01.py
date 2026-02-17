@@ -1,36 +1,49 @@
 """
-You are given two arrays a[] and b[], return the Union of both the arrays in any order.
+-------------------------------------------------------------------------------------------------------------------------------------
+Disciplina: Algoritmos Avançados   
+Curso: Engenharia de Software  
+Aluno(a): Pedro Henrique Vitoreti
+Professor: Glauco Scheffel
+-------------------------------------------------------------------------------------------------------------------------------------
+Nome do problema : Union of Arrays with Duplicates
+Link do problema : https://www.geeksforgeeks.org/problems/union-of-two-arrays3538/1
+Plataforma utilizada : GeeksforGeeks 
+Estrutura de dados principal usada : Array
+Justificativa: por que essa estrutura é adequada para resolver o problema 
+"""
 
-The Union of two arrays is a collection of all distinct elements present in either of the arrays. If an element appears more than once in one or both arrays, it should be included only once in the result.
+"""
+Dado dois arrays, a[] e b[], retorne a união de ambos os arrays em qualquer ordem.
+A união de dois arrays é uma coleção de todos os elementos distintos presentes em qualquer um dos arrays. Se um elemento aparecer mais de uma vez em um ou em ambos os arrays, ele deverá ser incluído apenas uma vez no resultado.
 
-Note: Elements of a[] and b[] are not necessarily distinct.
-Note that, You can return the Union in any order but the driver code will print the result in sorted order only.
+Observação: Os elementos de a[] e b[] não são necessariamente distintos.
+Observe também que você pode retornar a união em qualquer ordem, mas o código principal imprimirá o resultado apenas em ordem crescente.
 
-Examples:
+Exemplos:
 
 Input: a[] = [1, 2, 3, 2, 1], b[] = [3, 2, 2, 3, 3, 2]
 Output: [1, 2, 3]
-Explanation: Union set of both the arrays will be 1, 2 and 3.
+Explicação: O conjunto união de ambas as matrizes será 1, 2 e 3.
 
 Input: a[] = [1, 2, 3], b[] = [4, 5, 6] 
 Output: [1, 2, 3, 4, 5, 6]
-Explanation: Union set of both the arrays will be 1, 2, 3, 4, 5 and 6.
+Explicação: O conjunto união de ambas as matrizes será 1, 2, 3, 4, 5 e 6.
 
 Input: a[] = [1, 2, 1, 1, 2], b[] = [2, 2, 1, 2, 1] 
 Output: [1, 2]
-Explanation: Union set of both the arrays will be 1 and 2.
+Explicação: A união dos dois arrays resultará em 1 e 2.
 
-Constraints:
+Restrições:
 
 1 ≤ a.size(), b.size() ≤ 106
 0 ≤ a[i], b[i] ≤ 105
 
 """
-# https://www.geeksforgeeks.org/problems/union-of-two-arrays3538/1
 
 # V1 - Feita por mim
 a = [1, 2, 3, 2, 1]
 b = [3, 2, 2, 3, 3, 2]
+
 def expectedOutput(a, b):
     union = []
     for item in a:
@@ -39,7 +52,8 @@ def expectedOutput(a, b):
     for item in b:
         if item not in union:
             union.append(item)
-    return union
+    return sorted(union)
+
 
 # V2 - Feita com ia
 a = [1, 2, 3, 2, 1]
