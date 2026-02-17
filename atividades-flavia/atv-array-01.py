@@ -20,18 +20,18 @@ cada elemento seja pelo menos tão grande quanto o elemento anterior.
 A cada movimento, você pode aumentar o valor de qualquer elemento em um. 
 Qual é o número mínimo de movimentos necessários?
 
--> Entrada:
+Entrada:
 A primeira linha contém um inteiro n: o tamanho do array.
 A segunda linha contém n inteiros x₁, x₂, ..., xₙ: os elementos do array.
 
--> Saída:
+Saída:
 Imprima um único inteiro: o número mínimo de movimentos necessários.
 
--> Restrições:
+Restrições:
 1 ≤ n ≤ 2 x 10⁵
 1 ≤ xᵢ ≤ 10⁹
 
-_Exemplo:_
+Exemplo:
 
 Entrada:
 5
