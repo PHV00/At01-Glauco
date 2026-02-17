@@ -8,11 +8,17 @@ Professor: Glauco Scheffel
 Nome do problema : Union of Arrays with Duplicates
 Link do problema : https://www.geeksforgeeks.org/problems/union-of-two-arrays3538/1
 Plataforma utilizada : GeeksforGeeks 
-Estrutura de dados principal usada : Array
-Justificativa: por que essa estrutura é adequada para resolver o problema 
+Estrutura de dados principal usada :  para o meu codigo Array dinâmico e para o gerado por ia Hash Set
+Justificativa: Pois enquanto o array dinâmico é uma estrutura de dados que pode armazenar elementos 
+de forma contígua e permite acesso rápido por índice, oque me permitiu preliminarmente resolver o problema, 
+o hash set é uma estrutura de dados que armazena elementos únicos e oferece operações eficientes de inserção,
+busca e união, oque me permitiu transformar a função em algo mais legivel e simples.
+-------------------------------------------------------------------------------------------------------------------------------------
 """
 
 """
+PROBLEMA:
+
 Dado dois arrays, a[] e b[], retorne a união de ambos os arrays em qualquer ordem.
 A união de dois arrays é uma coleção de todos os elementos distintos presentes em qualquer um dos arrays. Se um elemento aparecer mais de uma vez em um ou em ambos os arrays, ele deverá ser incluído apenas uma vez no resultado.
 
@@ -44,7 +50,7 @@ Restrições:
 a = [1, 2, 3, 2, 1]
 b = [3, 2, 2, 3, 3, 2]
 
-def expectedOutput(a, b):
+def unionFunction(a, b):
     union = []
     for item in a:
         if item not in union:
@@ -54,11 +60,14 @@ def expectedOutput(a, b):
             union.append(item)
     return sorted(union)
 
+print("Por mim"+str(unionFunction(a, b)))
 
 # V2 - Feita com ia
 a = [1, 2, 3, 2, 1]
 b = [3, 2, 2, 3, 3, 2]
 
-def expectedOutput(a, b):
+def unionFunction(a, b):
     union = set(a) | set(b)
     return list(union)
+
+print("Pela IA"+str(unionFunction(a, b)))
