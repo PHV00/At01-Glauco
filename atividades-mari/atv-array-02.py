@@ -6,7 +6,7 @@ Aluno(a): Marina Rosa Oliveira
 Professor: Glauco Scheffel
 -------------------------------------------------------------------------------------------------------------------------------------
 
--> Problema: Majority Element
+Problema: Majority Element
 
 -> Complexidade:
 Tempo: O(n)

@@ -6,7 +6,7 @@ Aluno(a): Marina Rosa Oliveira
 Professor: Glauco Scheffel
 -------------------------------------------------------------------------------------------------------------------------------------
 
--> Problema: Adding one to number represented as array of digits
+Problema: Adding one to number represented as array of digits
 
 -> Complexidade:
 Tempo: O(n)
