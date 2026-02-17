@@ -47,8 +47,8 @@ Restrições:
 """
 
 # V1 - Feita por mim
-a = [1, 2, 3, 2, 1]
-b = [3, 2, 2, 3, 3, 2]
+a = [1, 2, 1, 1, 2]
+b = [2, 2, 1, 2, 1] 
 
 def unionFunction(a, b):
     union = []
@@ -60,14 +60,32 @@ def unionFunction(a, b):
             union.append(item)
     return sorted(union)
 
-print("Por mim"+str(unionFunction(a, b)))
+print("Por mim: "+str(unionFunction(a, b)))
 
 # V2 - Feita com ia
-a = [1, 2, 3, 2, 1]
-b = [3, 2, 2, 3, 3, 2]
+"""
+PROMPT:
+Estou resolvendo o problema Union of Arrays with Duplicates do geeksforgeeks em Python (https://www.geeksforgeeks.org/problems/union-of-two-arrays3538/1).
+dado este codigo de resolução
+def unionFunction(a, b):
+    union = []
+    for item in a:
+        if item not in union:
+            union.append(item)
+    for item in b:
+        if item not in union:
+            union.append(item)
+    return sorted(union)
+Você pode me mostrar uma versão melhorada refatorada do código? 
+mostrandos as falhas e erros e explicando oque foi alterado, o porque e oque estas mudanças afetam
+no resultado final?
+"""
+
+a = [1, 2, 1, 1, 2]
+b = [2, 2, 1, 2, 1] 
 
 def unionFunction(a, b):
     union = set(a) | set(b)
     return list(union)
 
-print("Pela IA"+str(unionFunction(a, b)))
+print("Pela IA: "+str(unionFunction(a, b)))
