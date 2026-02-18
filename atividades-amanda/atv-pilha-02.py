@@ -81,6 +81,62 @@ def solve_v1():
 
     print("Resultado: ", *resultado)
 
+"""
+Seleção do uso de IA neste exercício
+
+-> Prompt utilizado
+"Estou desenvolvendo um problema encontrado no link https://cses.fi/problemset/task/3221/, Nearest Smaller Values.
+Minha ideia é utilizar uma pilha para armazenar índices e remover elementos 
+maiores até encontrar o menor anterior. 
+O que você acha da minha hipótese para o problema? tem algo q poderia ser mais fácil?"
+
+-> O que foi aproveitado
+Confirmei minha estratégia de pilha, mas atualizei a organização estrutural.
+
+-> O que foi adaptado:
+Mantive a lógica principal desenvolvida, mas ajustei a organização e alguns comentários. 
+
+-> Reflexão Final:
+A IA foi utilizada como ferramenta de validação do solução proposta.
+
+"""
+
+# V2 - feito por IA
+def solve_v2():
+    print("Digite o valor de n e pressione Enter: ")
+
+    try:
+        n = int(input())
+    except ValueError:
+        print("Erro: n deve ser um número inteiro.")
+        return
+
+    print("Digite os números separados por espaço.")
+    
+    arr = []
+    while len(arr) < n:
+        try:
+            arr.extend(map(int, input().split()))
+        except ValueError:
+            print("Erro: todos os valores devem ser inteiros.")
+            return
+        
+    if len(arr) != n:
+        print("Erro: quantidade incorreta de valores.")
+        return
+    
+    stack = []
+    resultado = [0] * n
+
+    for i, valor in enumerate(arr):
+        while stack and arr[stack[-1]] >= valor:
+            stack.pop()
+
+        resultado[i] = stack[-1] + 1 if stack else 0
+
+        stack.append(i)
+    
+    print("Resultado: ", *resultado)
 
 # Menu principal
 if __name__ == "__main__":
@@ -92,5 +148,7 @@ if __name__ == "__main__":
 
     if opcao == "1":
         solve_v1()
+    elif opcao == "2":
+        solve_v2()
     else:
         print("Opção Inválida")
