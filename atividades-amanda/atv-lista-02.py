@@ -100,18 +100,77 @@ def solve_v1():
 
     print("Ordem de remoção: ", *resultado)
 
+"""
+
+Seleção do uso de IA nesta atividade
+
+-> Prompt utilizado:
+"Etou resolvendo o problema List Removals do CSES, do link "https://cses.fi/problemset/task/1749/"
+Minha ideia é utilizar uma lista encadeada para remover os elementos ordenadamente. 
+Segue em anexo o código que utilizei e o print do teste no terminal.
+O que você achou? podemos simplificar o problema?
+
+-> O que foi aproveitado:
+Confirmei a utilização da lista encadeada para resolução do problema e confirmei a lógica de remoção "dinâmica"
+
+-> O que foi adaptado:
+Reestruturei a organização do código e adicionei validações na entrada.
+
+-> Reflexão final:
+A IA foi utilizada como ferramenta de validação estrutural e de organização do código. 
+
+"""
+
+# V2 - feita pela IA
+
+def solve_v2():
+    print("Digite o valor de n: ")
+    try:
+        n = int(input())
+    except ValueError:
+        print("Erro: n deve ser um número inteiro")
+        return
+    
+    print("Digite os valores da lista: ")
+    try:
+        values = list(map(int, input().split()))
+    except ValueError:
+        print("Erro: todos os valores devem ser números inteiros.")
+        return
+    
+    print("Digite as posições de remoção: ")
+    try:
+        positions = list(map(int, input().split()))
+    except ValueError:
+        print("Erro: posições devem ser inteiras.")
+        return
+    
+    if len(values) != n or len(positions) != n:
+        print("Erro: quantidade incorreta de dados.")
+        return
+    
+    resultado = []
+
+    #Simulação com a lista dinâmica
+    for pos in positions:
+        removido = values.pop(pos-1)
+        resultado.append(removido)
+
+    print("Ordem de remoção ", *resultado)
+
+
 
 # Menu principal
 
 if __name__ == "__main__":
     print("Digite 1 para executar a V1 (minha versão)")
-    #print("Digite 3 para executar a V2 (versão da IA)")
+    print("Digite 2 para executar a V2 (versão da IA)")
 
     opcao = input("Escolha a opção: ")
 
     if opcao == "1":
         solve_v1()
-    #elif opcao == "2":
-        #solve_v2()
+    elif opcao == "2":
+        solve_v2()
     else:
         print("Opção Inválida.")
