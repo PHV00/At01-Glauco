@@ -28,6 +28,6 @@ A linguagem escolhida pela equipe foi **python**, pois a ferramenta apresenta co
 - Sugerir otimizações/refatorações
 
 
-
+*O relatório oficial foi postado em anexo a atividade no Teams
 
 
