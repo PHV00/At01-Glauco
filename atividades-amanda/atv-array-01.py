@@ -34,8 +34,8 @@ Saída:
 Impressão de um único número inteiro, a quantidade de valores distintos.
 
 Restrições:
-1 \le n \le 2 \cdot 10^5
-1 \le x_i \le 10^9
+1 <= n <= 2 x 10^5
+1 <= x_i <= 10^9
 
 Exemplo
 
@@ -136,7 +136,7 @@ def solve_v2():
 
 if __name__ == "__main__":
 
-    print("Digite 1 para executar V1 (minha versão): ")
+    print("Digite 1 para executar a V1 (minha versão): ")
     print("Digite 2 para executar a V2 (feita pela IA)")
 
     opcao = input ("Escolha a opção: ")
