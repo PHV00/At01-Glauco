@@ -26,7 +26,7 @@ A linguagem escolhida pela equipe foi **python**, pois a ferramenta apresenta co
 - [Adding one to number represented as array of digits (Geeks for Geeks)](URL "https://www.geeksforgeeks.org/dsa/adding-one-to-number-represented-as-array-of-digits/");
 - [Majority Element (Geeks for Geeks)](URL "https://www.geeksforgeeks.org/dsa/majority-element/");
 - [Increasing Array (CSES)](URL "https://cses.fi/problemset/task/1094/");
-- [Distinct Numbers (CSES)] (URL "https://cses.fi/problemset/task/1621/");
+- [Distinct Numbers (CSES)](URL "https://cses.fi/problemset/task/1621/");
 
 **Lista Encadeada**
 - [Middle Node in a Linked List (Geeks for Geeks)](URL "https://www.geeksforgeeks.org/dsa/write-a-c-function-to-print-the-middle-of-the-linked-list/");
