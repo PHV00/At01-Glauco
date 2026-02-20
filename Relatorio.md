@@ -23,8 +23,8 @@ A linguagem escolhida pela equipe foi **python**, pois a ferramenta apresenta co
 
 ## Listagem de Problemas Escolhidos
 **Array**
-- Adding one to number represented as array of digits (https://www.geeksforgeeks.org/dsa/adding-one-to-number-represented-as-array-of-digits/);
-- Majority Element (https://www.geeksforgeeks.org/dsa/majority-element/);
+- [Adding one to number represented as array of digits](URL "https://www.geeksforgeeks.org/dsa/adding-one-to-number-represented-as-array-of-digits/");
+- [Majority Element](URL "https://www.geeksforgeeks.org/dsa/majority-element/");
 - Increasing Array (https://cses.fi/problemset/task/1094/);
 - Distinct Numbers (https://cses.fi/problemset/task/1621/);
 
