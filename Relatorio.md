@@ -27,9 +27,11 @@ A linguagem escolhida pela equipe foi **python**, pois a ferramenta apresenta co
 - Majority Element (https://www.geeksforgeeks.org/dsa/majority-element/);
 - Increasing Array (https://cses.fi/problemset/task/1094/);
 - Distinct Numbers (https://cses.fi/problemset/task/1621/);
+
 **Lista Encadeada**
 - Middle Node in a Linked List (https://www.geeksforgeeks.org/dsa/write-a-c-function-to-print-the-middle-of-the-linked-list/);
-**Pilha
+
+**Pilha**
 - Repetitions (https://cses.fi/problemset/task/1069/);
 - Nearest Smaller Vales (https://cses.fi/problemset/task/3221/);
 
