@@ -23,17 +23,17 @@ A linguagem escolhida pela equipe foi **python**, pois a ferramenta apresenta co
 
 ## Listagem de Problemas Escolhidos
 **Array**
-- [Adding one to number represented as array of digits](URL "https://www.geeksforgeeks.org/dsa/adding-one-to-number-represented-as-array-of-digits/");
-- [Majority Element](URL "https://www.geeksforgeeks.org/dsa/majority-element/");
-- Increasing Array (https://cses.fi/problemset/task/1094/);
-- Distinct Numbers (https://cses.fi/problemset/task/1621/);
+- [Adding one to number represented as array of digits (Geeks for Geeks)](URL "https://www.geeksforgeeks.org/dsa/adding-one-to-number-represented-as-array-of-digits/");
+- [Majority Element (Geeks for Geeks)](URL "https://www.geeksforgeeks.org/dsa/majority-element/");
+- [Increasing Array (CSES)](URL "https://cses.fi/problemset/task/1094/");
+- [Distinct Numbers (CSES)] (URL "https://cses.fi/problemset/task/1621/");
 
 **Lista Encadeada**
-- Middle Node in a Linked List (https://www.geeksforgeeks.org/dsa/write-a-c-function-to-print-the-middle-of-the-linked-list/);
+- [Middle Node in a Linked List (Geeks for Geeks)](URL "https://www.geeksforgeeks.org/dsa/write-a-c-function-to-print-the-middle-of-the-linked-list/");
 
 **Pilha**
-- Repetitions (https://cses.fi/problemset/task/1069/);
-- Nearest Smaller Vales (https://cses.fi/problemset/task/3221/);
+- [Repetitions (CSES)](URL "https://cses.fi/problemset/task/1069/");
+- [Nearest Smaller Vales (CSES)](URL "https://cses.fi/problemset/task/3221/");
 
 ## Utilização da IA na atividade
 - Geração de rascunhos iniciais das soluções 
