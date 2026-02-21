@@ -8,8 +8,11 @@ Professor: Glauco Scheffel
 Nome do problema : Detect Loop in linked list
 Link do problema : https://www.geeksforgeeks.org/problems/detect-loop-in-linked-list/0?utm_source=chatgpt.com
 Plataforma utilizada : GeeksforGeeks 
-Estrutura de dados principal usada :
-Justificativa:
+Estrutura de dados principal usada : lista encadeada sem loop
+Justificativa: Foi gerado dois metodos para validar se uma lista encadeade está em loop ou não,
+o primeiro método utiliza um set para armazenar os nós visitados, enquanto o segunto método utiliza 
+o algoritmo de Floyd's Tortoise and Hare, que é mais eficiente para detectar ciclos 
+em listas encadeadas.Assim solucionando o problema que era indetificar quando um loop ocorria.
 -------------------------------------------------------------------------------------------------------------------------------------
 """
 """
