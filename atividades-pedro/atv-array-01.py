@@ -13,6 +13,7 @@ Justificativa: Pois enquanto o array dinâmico é uma estrutura de dados que pod
 de forma contígua e permite acesso rápido por índice, oque me permitiu preliminarmente resolver o problema, 
 o hash set é uma estrutura de dados que armazena elementos únicos e oferece operações eficientes de inserção,
 busca e união, oque me permitiu transformar a função em algo mais legivel e simples.
+Dificuldade: Facil
 -------------------------------------------------------------------------------------------------------------------------------------
 """
 
