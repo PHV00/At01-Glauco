@@ -13,6 +13,7 @@ Justificativa: Foi gerado dois metodos para validar se uma lista encadeade está
 o primeiro método utiliza um set para armazenar os nós visitados, enquanto o segunto método utiliza 
 o algoritmo de Floyd's Tortoise and Hare, que é mais eficiente para detectar ciclos 
 em listas encadeadas.Assim solucionando o problema que era indetificar quando um loop ocorria.
+Dificuldade: Media
 -------------------------------------------------------------------------------------------------------------------------------------
 """
 """
@@ -92,7 +93,7 @@ def detect_loop_set(head):
     return False
 Me explique quais os melhores metodos e logicas para resolver este problema, trazendo com isso os
 respectivos codigos e explicando as mudanças e melhorias em relação ao código acima e
-o porque e oque estas mudanças afetam, de preferenciam com metricas de tempo e processamento.
+o porque e oque estas mudanças afetam, de preferencia com metricas de tempo e processamento.
 """
 def detect_loop_floyd(head):
     slow = head
