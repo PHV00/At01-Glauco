@@ -44,7 +44,7 @@ Entrada:
 3 6 4 7 6 6 
 
 Saída
-1
+4
 
 -> Justificativa da estrutura
 O array é adequado por o problema exige apenas acesso sequencial e comparação entre os elementos.

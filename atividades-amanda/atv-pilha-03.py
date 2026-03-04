@@ -41,7 +41,7 @@ Restrições:
 
 -> Justificativa da Estrutura:
 A pilha é adequada porque o problema exige armazenamento temporário de elementos anteriores com a remoção
-"eficiente" no padrão LIFO (First in, first out).
+"eficiente" no padrão LIFO (Last in, first out).
 
 """
 
