@@ -15,68 +15,21 @@ Memória: O(1)
 -> Estrutura principal utilizada: Array - Nível médio
 
 -> Descrição do problema:
-Dado uma matriz arr[] de tamanho n, encontre o elemento que aparece mais de ⌊n/2⌋ (metade) vezes. 
+Dada uma matriz arr[] de tamanho n, encontre o elemento que aparece mais de ⌊n/2⌋ (metade) vezes. 
 
 -> Restrições:
 Se não existir um elemento majoritário, retorne -1.
-
--> Estratégia V1:
-Utilizei a função Counter de uma biblioteca externa, a qual retorna um dicionário com a contagem de cada item do array.
-Percorri esse dicionário de contagem para tentar identificar se algum dos números tinha uma frequência > (tamanho_do_array/2).
-
-Se sim, retorna esse número.
-Se não, retorna -1.
-
--> Estratégia V2
-Foi utilizado o algoritmo de votação de Boyer-Moore, que encontra o possível elemento majoritário percorrendo o array apenas uma vez, sem uso de estruturas auxiliares.
-Isso ajuda a reduzir a memória de O(n) para O(1) mantendo tempo linear.
-
-A ideia central é manter um candidato a majoritário e um contador de votos.
-
-Sempre que o contador zera, o elemento atual passa a ser o novo candidato.
-Quando o elemento atual é igual ao candidato, o contador é incrementado.
-Quando é diferente, o contador é decrementado.
-
-Essa lógica funciona porque o elemento majoritário aparece mais da metade das vezes, portanto não pode ser totalmente cancelado pelos demais valores.
-
-Ao final do percurso, é feita uma verificação para confirmar se o candidato realmente é majoritário.
-Caso não seja, retorna -1.
-
--> Entrada 1:
-Array: [1, 1, 2, 1, 3, 5, 1]
-
--> Saída 1:
-1
-
--> Entrada 2:
-Array: [2, 13]
-
--> Saída 2:
--1
 
 -> Utilização da IA
 Neste exercício, a IA foi utilizada para refatorar o código e explicar sua refatoração linha a linha, de forma a facilitar a compreensão da nova lógica e
 tornar o código mais eficiente utilizando python puro, sem bibliotecas externas.
 
--> Prompt
-
-"dado o código abaixo, refatore e explique linha a linha com comentários
-
-from collections import Counter
-def solucao_v1(arr):
-    metade = len(arr) // 2   # metade inteira
-    contagem = Counter(arr)
-
-    for numero, frequencia in contagem.items():
-        if frequencia > metade:
-            return numero
-
-    return -1   # se não existir valor majoritário"
-
 Fonte: https://www.geeksforgeeks.org/dsa/majority-element/
 """
 # V1 - Feito por mim
 from collections import Counter
+import unittest
+
 def solucao_v1(arr):
     metade = len(arr) // 2   # metade inteira
     contagem = Counter(arr)
@@ -87,7 +40,7 @@ def solucao_v1(arr):
 
     return -1   # se não existir valor majoritário
 
-# V2 - Feito pela IA - Refatorado sem Counter e explicado linha a linha com comentários
+# V2 - Refatorado pela IA
 def solucao_v2(arr):
 
     # Candidato a possível elemento majoritário
@@ -119,7 +72,27 @@ def solucao_v2(arr):
     # Caso não exista elemento majoritário
     return -1
 
+# =========================
+# TESTES UNITÁRIOS
+# =========================
+
+class TestMajorityElement(unittest.TestCase):
+
+    # Teste 1: existe elemento majoritário
+    def test_array_com_majoritario(self):
+        arr = [1, 1, 2, 1, 3, 5, 1]
+        self.assertEqual(solucao_v1(arr), 1)
+        self.assertEqual(solucao_v2(arr), 1)
+
+    # Teste 2: não existe elemento majoritário
+    def test_array_sem_majoritario(self):
+        arr = [1, 2, 3, 4]
+        self.assertEqual(solucao_v1(arr), -1)
+        self.assertEqual(solucao_v2(arr), -1)
+
+# =========================
 # MENU PRINCIPAL
+# =========================
 if __name__ == "__main__":
 
     arr1 = [1, 1, 2, 1, 3, 5, 1] # 1
@@ -129,9 +102,10 @@ if __name__ == "__main__":
 
     print("Digite 1 para usar a V1 (feita por mim)")
     print("Digite 2 para usar a V2 (refatorada por IA)")
+    print("Digite 3 para executar os testes unitários.")
     op = int(input("Informe a opção desejada: "))
 
-    if op == 1:
+    if op == 1: # V1
         print(f"Array: {arr1}")
         valMaj = solucao_v1(arr1)
         print(f"Valor majoritário: {valMaj}")
@@ -154,7 +128,7 @@ if __name__ == "__main__":
         valMaj = solucao_v1(arr4)
         print(f"Valor majoritário: {valMaj}")
 
-    elif op == 2:
+    elif op == 2: # V2
         print(f"Array: {arr1}")
         valMaj = solucao_v2(arr1)
         print(f"Valor majoritário: {valMaj}")
@@ -176,5 +150,8 @@ if __name__ == "__main__":
         print(f"Array: {arr4}")
         valMaj = solucao_v2(arr4)
         print(f"Valor majoritário: {valMaj}")
+
+    elif op == 3: # Testes
+        unittest.main()
     else:
         print("Opção inválida.")
