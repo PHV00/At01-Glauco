@@ -19,72 +19,14 @@ Dado um número não negativo representado como uma matriz de dígitos.
 A tarefa é somar 1 ao número (aumentar por 1 o número representado pelos algarismos). 
 Os dígitos são armazenados de forma que o dígito mais significativo seja o primeiro elemento da matriz.
 
--> Estratégia V1:
-Transformar o array em uma string através de concatenação, depois converter de volta para número inteiro e somar 1 diretamente.
-
-Essa abordagem é simples, porém depende de conversões de tipo e não trabalha diretamente com a lógica
-de soma por casas decimais.
-
--> Estratégia V2:
-Percorrer o array de dígitos de trás para frente simulando a soma manual feita em operações matemáticas.
-
-Se o dígito atual for menor que 9, basta somar 1 e encerrar o processo.
-Se o dígito for igual a 9, ele se torna 0 e o "vai um" é propagado para o dígito da esquerda.
-
-Caso todos os dígitos sejam 9, insere-se o valor 1 no início do array, formando um novo número com uma casa a mais.
-
-Essa abordagem evita conversões e utiliza apenas operações sobre o próprio array.
-
--> Entrada 1:
-[9, 9, 9]
-
--> Saída 1:
-1000
-
--> Entrada 2:
-[1, 2, 4]
-
--> Saída 2:
-125
-
--> Entrada 3:
-[0]
-
--> Saída 3:
-1
-
--> Entrada 4:
-[1, 9, 9]
-
--> Saída 4:
-200
-
 -> Utilização da IA
 Neste exercício, a IA foi utilizada para refatorar o código e explicar sua refatoração linha a linha, de forma a facilitar a compreensão da nova lógica. Além disso,
 foi utilizada para melhorar a clareza da documentação.
 
--> Prompt
-"dado o código
-
-numStr = ""
-
-    for n in numArr:
-        numStr += str(n)
-
-    num = int(numStr)
-
-    num = num + 1
-
-    return num
-
-e as instruções abaixo 
-
-Given a non-negative number represented as an array of digits. The task is to add 1 to the number (increment the number represented by the digits by 1). The digits are stored such that the most significant digit is the first element of the array.
-
-refatore o código e explique linha a linha"
-
 Fonte: https://www.geeksforgeeks.org/dsa/adding-one-to-number-represented-as-array-of-digits/
 """
+
+import unittest
 
 # V1 - Feita por mim
 def solucao_v1(numArr):
@@ -130,7 +72,49 @@ def solucao_v2(numArr):
 
     return resultado
 
+# =========================
+# TESTES UNITÁRIOS
+# =========================
+class TestPlusOne(unittest.TestCase):
+
+    # Teste 1: todos os dígitos são 9
+    # 999 + 1 = 1000
+    def test_todos_nove(self):
+        arr = [9, 9, 9]
+
+        self.assertEqual(solucao_v1(arr.copy()), 1000)
+        self.assertEqual(solucao_v2(arr.copy()), 1000)
+
+
+    # Teste 2: incremento simples sem carry
+    # 124 + 1 = 125
+    def test_incremento_simples(self):
+        arr = [1, 2, 4]
+
+        self.assertEqual(solucao_v1(arr.copy()), 125)
+        self.assertEqual(solucao_v2(arr.copy()), 125)
+
+
+    # Teste 3: número zero
+    # 0 + 1 = 1
+    def test_zero(self):
+        arr = [0]
+
+        self.assertEqual(solucao_v1(arr.copy()), 1)
+        self.assertEqual(solucao_v2(arr.copy()), 1)
+
+
+    # Teste 4: propagação de carry parcial
+    # 199 + 1 = 200
+    def test_carry_parcial(self):
+        arr = [1, 9, 9]
+
+        self.assertEqual(solucao_v1(arr.copy()), 200)
+        self.assertEqual(solucao_v2(arr.copy()), 200)
+
+# =========================
 # MENU PRINCIPAL
+# =========================
 if __name__ == "__main__":
 
     arr1 = [9, 9, 9]
@@ -140,6 +124,7 @@ if __name__ == "__main__":
 
     print("Digite 1 para usar a V1 (feita por mim)")
     print("Digite 2 para usar a V2 (refatorada por IA)")
+    print("Digite 3 para executar testes unitários")
     op = int(input("Informe a opção desejada: "))
 
     if op == 1:
@@ -187,5 +172,7 @@ if __name__ == "__main__":
         print(f"Array: {arr4}")
         valMaj = solucao_v2(arr4)
         print(f"Valor +1: {valMaj}")
+    elif op == 3:
+        unittest.main()
     else:
         print("Opção inválida.")
