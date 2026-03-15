@@ -9,8 +9,8 @@ Professor: Glauco Scheffel
 Problema: Josephus Problem I (CSES)
 
 -> Complexidade:
-Tempo: 1.00 s
-Memória: 512 MB
+Tempo: 1.00 s | O(n)
+Memória: 512 MB | O(n)
 
 -> Estrutura principal utilizada:
 Lista Encadeada (simulada com deque)

@@ -9,8 +9,8 @@ Professor: Glauco Scheffel
 Problema: Distinct Numbers (CSES)
 
 -> Complexidade: 
-Tempo: 1s
-Memória: 512MB
+Tempo: 1s | O(n log n)
+Memória: 512MB | O(1)
 
 -> Estrutura principal utilizada: 
 Array, nível fácil 
@@ -44,7 +44,7 @@ Entrada:
 3 6 4 7 6 6 
 
 Saída
-1
+4
 
 -> Justificativa da estrutura
 O array é adequado por o problema exige apenas acesso sequencial e comparação entre os elementos.

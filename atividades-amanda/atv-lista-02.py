@@ -9,8 +9,8 @@ Professor: Glauco Scheffel
 Problema: List Removals (CSES)
 
 -> Complexidade:
-Tempo: 1s
-Memória: 512MB
+Tempo: 1s | O(n²)
+Memória: 512MB | O(n)
 
 -> Estrutura principal utilizada:
 Lista Encadeada, nível médio.

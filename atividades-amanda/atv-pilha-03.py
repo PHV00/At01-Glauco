@@ -9,8 +9,8 @@ Professor: Glauco Scheffel
 Problema: Nearest Smaller Vales (CSES)
 
 -> Complexidade:
-Tempo: 1s
-Memória: 512MB
+Tempo: 1s | O(n)
+Memória: 512MB | O(n)
 
 -> Estrutura principal utilizada:
 Pilha, nível médio
@@ -41,7 +41,7 @@ Restrições:
 
 -> Justificativa da Estrutura:
 A pilha é adequada porque o problema exige armazenamento temporário de elementos anteriores com a remoção
-"eficiente" no padrão LIFO (First in, first out).
+"eficiente" no padrão LIFO (Last in, first out).
 
 """
 

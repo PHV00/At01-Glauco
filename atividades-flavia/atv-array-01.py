@@ -9,8 +9,8 @@ Professor: Glauco Scheffel
 Problema: Increasing Array (CSES)
 
 -> Complexidade:
-Tempo: 1.00 s
-Memória: 512 MB
+Tempo: 1.00 s | O(n)
+Memória: 512 MB | O(1)
 
 -> Estrutura principal utilizada: Array - Nível fácil
 
