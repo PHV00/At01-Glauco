@@ -9,8 +9,8 @@ Professor: Glauco Scheffel
 Problema: Nearest Smaller Vales (CSES)
 
 -> Complexidade:
-Tempo: 1s
-Memória: 512MB
+Tempo: 1s | O(n)
+Memória: 512MB | O(n)
 
 -> Estrutura principal utilizada:
 Pilha, nível médio

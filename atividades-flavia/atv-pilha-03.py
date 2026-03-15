@@ -12,7 +12,7 @@ Problema: Repetitions (CSES)
 Pilha
 
 -> Complexidade:
-Tempo: O(n)
+Tempo: O(n) 
 Memória: O(n)
 
 -> Descrição:
